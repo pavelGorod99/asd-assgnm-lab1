@@ -24,7 +24,7 @@ public class ProductMgmtApp {
 	}
 
 	private static void printProductsInJSON(Product[] products) {
-		System.out.println("JSON-formatted list of all Products:");
+		System.out.println("# JSON-formatted list of all Products:");
 		System.out.println("[");
 		for (Product product : products) {
 			System.out.printf("  { \"productId\": \"%s\", \"productName\": \"%s\", \"dateSupplied\": \"%s\", \"quantityInStock\": %d, \"unitPrice\": %.2f },\n",
@@ -35,7 +35,7 @@ public class ProductMgmtApp {
 	}
 
 	private static void printProductsInXML(Product[] products) {
-		System.out.println("XML-formatted list of all Products:");
+		System.out.println("# XML-formatted list of all Products:");
 		System.out.println("<Products>");
 		for (Product product : products) {
 			System.out.printf("  <Product>\n    <productId>%s</productId>\n    <productName>%s</productName>\n    <dateSupplied>%s</dateSupplied>\n    <quantityInStock>%d</quantityInStock>\n    <unitPrice>%.2f</unitPrice>\n  </Product>\n",
@@ -46,7 +46,7 @@ public class ProductMgmtApp {
 	}
 
 	private static void printProductsInCSV(Product[] products) {
-		System.out.println("Comma-Separated Values (CSV)-formatted list of all Products:");
+		System.out.println("# Comma-Separated Values (CSV)-formatted list of all Products:");
 		System.out.println("productId,productName,dateSupplied,quantityInStock,unitPrice");
 		for (Product product : products) {
 			System.out.printf("%s,%s,%s,%d,%.2f\n",
